@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="shortcut icon" href="./Images/elephant.jpg">
+    <!-- link is used tio upload photo to icon of the webpage -->
+</head>
+<marquee behavior="slide"  loop ="5" height="100px" width="50px"  bgcolor="yellow" direction="right" scrollamount="130">WebTechnology</marquee>
+<!-- Marquee is used to slide or scroll or alternate content,in behaviour value u can giv slide scroll alternate -->
+<body>
+    <center>
+    <form action="" method="post" autocomplete="off">
+        <fieldset style="background-color: rgb(149, 225, 234);"
+            <legend>
+                &#128FORM&#128699
+            </legend>
+            <table>
+                <tr>
+                    <!-- *for* in label and *id* should have same values only then they both will be related u will know it whenever u click on label content it blinks in related input content -->
+                    <td>
+                        <label for="fn">First Name</label>
+                    </td>
+                    <td> 
+                        <input type="text" id="fn" name="fn" required placeholder="First Name"> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="ln">Last Name</label>
+                    </td>
+                    <td> 
+                        <input type="text" id="ln" name="ln" required placeholder="Last Name"> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pass">Password</label>
+                    </td>
+                    <td>
+                        <input type="password" id="pass" name="pass">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="date">D.O.B</label>
+                    </td>
+                    <td>
+                        <input type="" id="date" name="date">       
+                        <!-- type can be time or month or week or date or datetime or date time local. -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="num">Number</label>
+                    </td>
+                    <td>
+                        <input type="number" id="num" name="num">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email</label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" name="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Add"></label>Address</td>
+                    <td>
+                        <textarea name="Add" id="Add" cols="30" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="imp">Gender</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="imp" name="imp" value="Male">Male
+                        <input type="radio" id="imp" name="imp" value="Female">Female
+                        <input type="radio" id="imp" name="imp" value="Others">Others
+                    </td>
+                </tr>
+<!-- always give value same as content for input type only then database can get to know the value and content else database understands value= *ON* -->
+                <tr>
+                    <td>
+                        <label for="select">Sports</label>
+                    </td>
+                    <td>
+                        <select name="select" id="select">
+                            <option value=""></option>
+                            <option value="Cricket">Cricket</option>
+                            <option value="Basketball">Basketball</option>
+                            <option value="Throwball">Throwball</option>
+                            <option value="Volleyball">Volleyball</option>  
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="course">Course</label>
+                    </td>
+                    <td> 
+                        <input type="checkbox" id="course" name="course">JAVA
+                        <input type="checkbox" id="course" name="course">CSS
+                        <input type="checkbox" id="course" name="course">JS
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="bb">Upload a File</label>
+                    </td>
+                    <td>
+                        <input type="file" id="bb" name="bb" >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="pp">Profile Picture</label>
+                    </td>
+                    <td>
+                        <input type="image"  src="./Images/Sahanaphoto.jpg" height="50px" width="50px" id="pp" name="pp" >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="ss">Search</label>
+                    </td>
+                    <td>
+                        <input type="search" id="ss" name="ss">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="cc">change of color</label>
+                    </td>
+                    <td>
+                        <input type="color" id="cc" name="cc">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit">Submit</button>
+                    </td>
+                    <td>
+                        <button type="reset">Reset</button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    </center>
+</body>
+</html>
